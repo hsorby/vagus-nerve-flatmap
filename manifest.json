@@ -1,0 +1,1 @@
+{"id": "vagus-nerve-flatmap", "models": "UBERON:0001759", "description": "description.json", "properties": "vagus_properties.json", "sckan-version": "production", "sources": [{"id": "vagus-nerve-01", "href": "vagus.svg", "kind": "base"}], "anatomicalMap": "", "connectivityTerms": "", "neuronConnectivity": []}

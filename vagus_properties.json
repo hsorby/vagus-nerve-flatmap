@@ -1,0 +1,89 @@
+{
+  "features": {
+    "group_1_name": {
+      "name": "centroid of left A lateral pulmonary branch of vagus nerve",
+      "type": "nerve"
+    },
+    "group_2_name": {
+      "name": "centroid of left A medial pulmonary branch of vagus nerve",
+      "type": "nerve"
+    },
+    "group_3_name": {
+      "name": "centroid of left A thoracic cardiac branch of vagus nerve",
+      "type": "nerve"
+    },
+    "group_4_name": {
+      "name": "centroid of left B thoracic cardiac branch of vagus nerve",
+      "type": "nerve"
+    },
+    "group_5_name": {
+      "name": "centroid of left vagus X nerve trunk",
+      "type": "nerve"
+    },
+    "marker_1": {
+      "models": "UBERON:9982932",
+      "name": "centroid at level of superior border of the jugular foramen on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_10": {
+      "models": "UBERON:9906331",
+      "name": "centroid at level of sternal angle on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_11": {
+      "models": "UBERON:9945093",
+      "name": "centroid at 1 cm superior to esophageal plexus on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_12": {
+      "models": "UBERON:9968290",
+      "name": "centroid at level of esophageal hiatus on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_13": {
+      "models": "UBERON:9906170",
+      "name": "centroid at level of aortic hiatus on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_2": {
+      "models": "UBERON:9960732",
+      "name": "centroid at level of inferior border of the jugular foramen on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_3": {
+      "models": "UBERON:9944117",
+      "name": "centroid at level of C1 transverse process on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_4": {
+      "models": "UBERON:9986504",
+      "name": "centroid at level of angle of mandible on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_5": {
+      "models": "UBERON:9953353",
+      "name": "centroid at level of tubercles of the greater horn of hyoid bone on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_6": {
+      "models": "UBERON:9905173",
+      "name": "centroid at level of carotid bifurcation on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_7": {
+      "models": "UBERON:9997443",
+      "name": "centroid at level of laryngeal prominence on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_8": {
+      "models": "UBERON:9961154",
+      "name": "centroid at level of superior border of clavicle on the vagal trunk",
+      "type": "nerve"
+    },
+    "marker_9": {
+      "models": "UBERON:9921129",
+      "name": "centroid at level of jugular notch on the vagal trunk",
+      "type": "nerve"
+    }
+  }
+}
