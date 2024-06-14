@@ -1,76 +1,92 @@
 {
   "features": {
+    "group_10_name": {
+      "name": "left external branch of superior laryngeal nerve",
+      "type": "nerve"
+    },
+    "group_11_name": {
+      "name": "left inferior ramus of Internal branch of L Superior laryngeal nerve",
+      "type": "nerve"
+    },
+    "group_12_name": {
+      "name": "left internal branch of superior laryngeal nerve",
+      "type": "nerve"
+    },
+    "group_13_name": {
+      "name": "left middle ramus of Internal branch of L Superior laryngeal nerve",
+      "type": "nerve"
+    },
+    "group_14_name": {
+      "name": "left pharyngeal branch of vagus nerve",
+      "type": "nerve"
+    },
+    "group_15_name": {
+      "name": "left recurrent laryngeal nerve",
+      "type": "nerve"
+    },
+    "group_16_name": {
+      "name": "left superior laryngeal nerve",
+      "type": "nerve"
+    },
+    "group_17_name": {
+      "name": "left superior/upper ramus of Internal branch of L Superior laryngeal nerve",
+      "type": "nerve"
+    },
+    "group_18_name": {
+      "name": "left vagus X nerve trunk",
+      "type": "nerve"
+    },
+    "group_19_name": {
+      "name": "left vagus X nerve trunk-fit",
+      "type": "nerve"
+    },
     "group_1_name": {
-      "name": "centroid of left A lateral pulmonary branch of vagus nerve",
+      "name": "Left glossopharyngeal nerve",
+      "type": "nerve"
+    },
+    "group_21_name": {
+      "name": "posterior A gastric branch of vagus nerve",
+      "type": "nerve"
+    },
+    "group_22_name": {
+      "name": "posterior B gastric branch of vagus nerve",
+      "type": "nerve"
+    },
+    "group_23_name": {
+      "name": "tracheal branch of left recurrent laryngeal nerve",
       "type": "nerve"
     },
     "group_2_name": {
-      "name": "centroid of left A medial pulmonary branch of vagus nerve",
+      "name": "Superior cervical cardiac branch of left vagus nerve",
       "type": "nerve"
     },
     "group_3_name": {
-      "name": "centroid of left A thoracic cardiac branch of vagus nerve",
+      "name": "branch of recurrent laryngeal nerve to muscle of larynx",
       "type": "nerve"
     },
     "group_4_name": {
-      "name": "centroid of left B thoracic cardiac branch of vagus nerve",
+      "name": "esophageal branch of left recurrent laryngeal nerve",
       "type": "nerve"
     },
     "group_5_name": {
-      "name": "centroid of left vagus X nerve trunk",
+      "name": "extra-laryngeal branch of recurrent laryngeal nerve to larynx",
       "type": "nerve"
     },
-    "marker_1": {
-      "models": "UBERON:9954583",
-      "name": "centroid at level of superior border of the jugular foramen on the vagal trunk"
+    "group_6_name": {
+      "name": "left A lateral pulmonary branch of vagus nerve",
+      "type": "nerve"
     },
-    "marker_10": {
-      "models": "UBERON:9999501",
-      "name": "centroid at level of sternal angle on the vagal trunk"
+    "group_7_name": {
+      "name": "left B lateral pulmonary branch of vagus nerve",
+      "type": "nerve"
     },
-    "marker_11": {
-      "models": "UBERON:9950853",
-      "name": "centroid at 1 cm superior to esophageal plexus on the vagal trunk"
+    "group_8_name": {
+      "name": "left auricular branch of left vagus nerve",
+      "type": "nerve"
     },
-    "marker_12": {
-      "models": "UBERON:9974040",
-      "name": "centroid at level of esophageal hiatus on the vagal trunk"
-    },
-    "marker_13": {
-      "models": "UBERON:9942499",
-      "name": "centroid at level of aortic hiatus on the vagal trunk"
-    },
-    "marker_2": {
-      "models": "UBERON:9959952",
-      "name": "centroid at level of inferior border of the jugular foramen on the vagal trunk"
-    },
-    "marker_3": {
-      "models": "UBERON:9911424",
-      "name": "centroid at level of C1 transverse process on the vagal trunk"
-    },
-    "marker_4": {
-      "models": "UBERON:9935630",
-      "name": "centroid at level of angle of mandible on the vagal trunk"
-    },
-    "marker_5": {
-      "models": "UBERON:9960678",
-      "name": "centroid at level of tubercles of the greater horn of hyoid bone on the vagal trunk"
-    },
-    "marker_6": {
-      "models": "UBERON:9970714",
-      "name": "centroid at level of carotid bifurcation on the vagal trunk"
-    },
-    "marker_7": {
-      "models": "UBERON:9923180",
-      "name": "centroid at level of laryngeal prominence on the vagal trunk"
-    },
-    "marker_8": {
-      "models": "UBERON:9972561",
-      "name": "centroid at level of superior border of clavicle on the vagal trunk"
-    },
-    "marker_9": {
-      "models": "UBERON:9908577",
-      "name": "centroid at level of jugular notch on the vagal trunk"
+    "group_9_name": {
+      "name": "left branch of vagus nerve to ipsilateral carotid body",
+      "type": "nerve"
     }
   }
 }
