@@ -2,91 +2,91 @@
   "features": {
     "group_10_name": {
       "name": "left external branch of superior laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_11_name": {
       "name": "left inferior ramus of Internal branch of L Superior laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_12_name": {
       "name": "left internal branch of superior laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_13_name": {
       "name": "left middle ramus of Internal branch of L Superior laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_14_name": {
       "name": "left pharyngeal branch of vagus nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_15_name": {
       "name": "left recurrent laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_16_name": {
       "name": "left superior laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_17_name": {
       "name": "left superior/upper ramus of Internal branch of L Superior laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_18_name": {
       "name": "left vagus X nerve trunk",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_19_name": {
       "name": "left vagus X nerve trunk-fit",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_1_name": {
       "name": "Left glossopharyngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_21_name": {
       "name": "posterior A gastric branch of vagus nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_22_name": {
       "name": "posterior B gastric branch of vagus nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_23_name": {
       "name": "tracheal branch of left recurrent laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_2_name": {
       "name": "Superior cervical cardiac branch of left vagus nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_3_name": {
       "name": "branch of recurrent laryngeal nerve to muscle of larynx",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_4_name": {
       "name": "esophageal branch of left recurrent laryngeal nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_5_name": {
       "name": "extra-laryngeal branch of recurrent laryngeal nerve to larynx",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_6_name": {
       "name": "left A lateral pulmonary branch of vagus nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_7_name": {
       "name": "left B lateral pulmonary branch of vagus nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_8_name": {
       "name": "left auricular branch of left vagus nerve",
-      "type": "nerve"
+      "type": "centreline"
     },
     "group_9_name": {
       "name": "left branch of vagus nerve to ipsilateral carotid body",
-      "type": "nerve"
+      "type": "centreline"
     }
   }
 }
