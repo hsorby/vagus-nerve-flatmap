@@ -2,7 +2,7 @@
   "description": "description.json",
   "id": "vagus-nerve-flatmap",
   "models": "UBERON:0001759",
-  "properties": "vagus_properties.json",
+  "properties": "properties.json",
   "sckan-version": "sckan-2024-03-26",
   "sources": [
     {
