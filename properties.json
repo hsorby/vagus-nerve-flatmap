@@ -88,5 +88,77 @@
       "name": "left branch of vagus nerve to ipsilateral carotid body",
       "type": "centreline"
     }
-  }
+  },
+  "networks": [
+    {
+      "centrelines": [
+        {
+          "id": "group_1_name"
+        },
+        {
+          "id": "group_2_name"
+        },
+        {
+          "id": "group_3_name"
+        },
+        {
+          "id": "group_4_name"
+        },
+        {
+          "id": "group_5_name"
+        },
+        {
+          "id": "group_6_name"
+        },
+        {
+          "id": "group_7_name"
+        },
+        {
+          "id": "group_8_name"
+        },
+        {
+          "id": "group_9_name"
+        },
+        {
+          "id": "group_10_name"
+        },
+        {
+          "id": "group_11_name"
+        },
+        {
+          "id": "group_12_name"
+        },
+        {
+          "id": "group_13_name"
+        },
+        {
+          "id": "group_14_name"
+        },
+        {
+          "id": "group_15_name"
+        },
+        {
+          "id": "group_16_name"
+        },
+        {
+          "id": "group_17_name"
+        },
+        {
+          "id": "group_18_name"
+        },
+        {
+          "id": "group_19_name"
+        },
+        {
+          "id": "group_21_name"
+        },
+        {
+          "id": "group_22_name"
+        },
+        {
+          "id": "group_23_name"
+        }
+      ]
+    }
+  ]
 }
