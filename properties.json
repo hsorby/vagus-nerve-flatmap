@@ -1,50 +1,50 @@
 {
   "features": {
-    "group_10_name": {
-      "label": "right B lateral pulmonary branch of vagus nerve",
-      "models": "ILX:0794279",
-      "type": "centreline"
-    },
-    "group_11_name": {
-      "label": "right vagus X nerve trunk",
-      "models": "UBERON:0035021",
-      "type": "centreline"
-    },
-    "group_1_name": {
+    "nerve_feature_01": {
       "label": "Pulmonary branch of right vagus nerve",
       "models": "FMA:6671",
       "type": "centreline"
     },
-    "group_2_name": {
+    "nerve_feature_02": {
       "label": "Vagus anterior line",
       "type": "centreline"
     },
-    "group_3_name": {
+    "nerve_feature_03": {
       "label": "Vagus centroid",
       "type": "centreline"
     },
-    "group_4_name": {
+    "nerve_feature_04": {
       "label": "Vagus epineurium",
       "type": "centreline"
     },
-    "group_6_name": {
+    "nerve_feature_06": {
       "label": "posterior A gastric branch of vagus nerve",
       "models": "ILX:0794398",
       "type": "centreline"
     },
-    "group_7_name": {
+    "nerve_feature_07": {
       "label": "posterior B gastric branch of vagus nerve",
       "models": "ILX:0794399",
       "type": "centreline"
     },
-    "group_8_name": {
+    "nerve_feature_08": {
       "label": "posterior C gastric branch of vagus nerve",
       "models": "ILX:0794400",
       "type": "centreline"
     },
-    "group_9_name": {
+    "nerve_feature_09": {
       "label": "right A lateral pulmonary branch of vagus nerve",
       "models": "ILX:0794278",
+      "type": "centreline"
+    },
+    "nerve_feature_10": {
+      "label": "right B lateral pulmonary branch of vagus nerve",
+      "models": "ILX:0794279",
+      "type": "centreline"
+    },
+    "nerve_feature_11": {
+      "label": "right vagus X nerve trunk",
+      "models": "UBERON:0035021",
       "type": "centreline"
     }
   },
