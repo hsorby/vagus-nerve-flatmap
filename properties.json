@@ -1,53 +1,4 @@
 {
-  "features": {
-    "nerve_feature_01": {
-      "label": "Pulmonary branch of right vagus nerve",
-      "models": "FMA:6671",
-      "type": "centreline"
-    },
-    "nerve_feature_02": {
-      "label": "Vagus anterior line",
-      "type": "centreline"
-    },
-    "nerve_feature_03": {
-      "label": "Vagus centroid",
-      "type": "centreline"
-    },
-    "nerve_feature_04": {
-      "label": "Vagus epineurium",
-      "type": "centreline"
-    },
-    "nerve_feature_06": {
-      "label": "posterior A gastric branch of vagus nerve",
-      "models": "ILX:0794398",
-      "type": "centreline"
-    },
-    "nerve_feature_07": {
-      "label": "posterior B gastric branch of vagus nerve",
-      "models": "ILX:0794399",
-      "type": "centreline"
-    },
-    "nerve_feature_08": {
-      "label": "posterior C gastric branch of vagus nerve",
-      "models": "ILX:0794400",
-      "type": "centreline"
-    },
-    "nerve_feature_09": {
-      "label": "right A lateral pulmonary branch of vagus nerve",
-      "models": "ILX:0794278",
-      "type": "centreline"
-    },
-    "nerve_feature_10": {
-      "label": "right B lateral pulmonary branch of vagus nerve",
-      "models": "ILX:0794279",
-      "type": "centreline"
-    },
-    "nerve_feature_11": {
-      "label": "right vagus X nerve trunk",
-      "models": "UBERON:0035021",
-      "type": "centreline"
-    }
-  },
   "networks": [
     {
       "centrelines": [
@@ -57,7 +8,8 @@
             "point_02"
           ],
           "id": "nerve_feature_01",
-          "label": "Pulmonary branch of right vagus nerve"
+          "label": "Pulmonary branch of right vagus nerve",
+          "models": "FMA:6671"
         },
         {
           "connects": [
@@ -68,7 +20,8 @@
             "point_04"
           ],
           "id": "nerve_feature_11",
-          "label": "right vagus X nerve trunk"
+          "label": "right vagus X nerve trunk",
+          "models": "UBERON:0035021"
         },
         {
           "connects": [
@@ -77,7 +30,8 @@
             "point_08"
           ],
           "id": "nerve_feature_06",
-          "label": "posterior A gastric branch of vagus nerve"
+          "label": "posterior A gastric branch of vagus nerve",
+          "models": "ILX:0794398"
         },
         {
           "connects": [
@@ -85,7 +39,8 @@
             "point_10"
           ],
           "id": "nerve_feature_07",
-          "label": "posterior B gastric branch of vagus nerve"
+          "label": "posterior B gastric branch of vagus nerve",
+          "models": "ILX:0794399"
         },
         {
           "connects": [
@@ -93,7 +48,8 @@
             "point_11"
           ],
           "id": "nerve_feature_08",
-          "label": "posterior C gastric branch of vagus nerve"
+          "label": "posterior C gastric branch of vagus nerve",
+          "models": "ILX:0794400"
         },
         {
           "connects": [
@@ -101,7 +57,8 @@
             "point_13"
           ],
           "id": "nerve_feature_09",
-          "label": "right A lateral pulmonary branch of vagus nerve"
+          "label": "right A lateral pulmonary branch of vagus nerve",
+          "models": "ILX:0794278"
         },
         {
           "connects": [
@@ -109,7 +66,8 @@
             "point_14"
           ],
           "id": "nerve_feature_10",
-          "label": "right B lateral pulmonary branch of vagus nerve"
+          "label": "right B lateral pulmonary branch of vagus nerve",
+          "models": "ILX:0794279"
         }
       ],
       "id": "vagus",
