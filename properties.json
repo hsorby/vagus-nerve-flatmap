@@ -56,7 +56,7 @@
             "point_01",
             "point_02"
           ],
-          "id": "path_1",
+          "id": "nerve_feature_01",
           "label": "Pulmonary branch of right vagus nerve"
         },
         {
@@ -67,7 +67,7 @@
             "point_06",
             "point_04"
           ],
-          "id": "path_2",
+          "id": "nerve_feature_11",
           "label": "right vagus X nerve trunk"
         },
         {
@@ -76,7 +76,7 @@
             "point_09",
             "point_08"
           ],
-          "id": "path_3",
+          "id": "nerve_feature_06",
           "label": "posterior A gastric branch of vagus nerve"
         },
         {
@@ -84,7 +84,7 @@
             "point_09",
             "point_10"
           ],
-          "id": "path_4",
+          "id": "nerve_feature_07",
           "label": "posterior B gastric branch of vagus nerve"
         },
         {
@@ -92,7 +92,7 @@
             "point_06",
             "point_11"
           ],
-          "id": "path_5",
+          "id": "nerve_feature_08",
           "label": "posterior C gastric branch of vagus nerve"
         },
         {
@@ -100,7 +100,7 @@
             "point_12",
             "point_13"
           ],
-          "id": "path_6",
+          "id": "nerve_feature_09",
           "label": "right A lateral pulmonary branch of vagus nerve"
         },
         {
@@ -108,7 +108,7 @@
             "point_12",
             "point_14"
           ],
-          "id": "path_7",
+          "id": "nerve_feature_10",
           "label": "right B lateral pulmonary branch of vagus nerve"
         }
       ],
