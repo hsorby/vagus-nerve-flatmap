@@ -1,9 +1,17 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="-19 -1518 94 460">
-	<rect x="-19" y="-1518" width="94" height="53" fill="red"/>
-	<rect x="-19" y="-1465" width="94" height="103" fill="green"/>
-	<rect x="-19" y="-1362" width="94" height="235" fill="grey"/>
-	<rect x="-19" y="-1127" width="94" height="79" fill="blue"/>
+	<rect x="-19" y="-1518" width="94" height="53" fill="red">
+		<title>.id(brain_region)</title>
+	</rect>
+	<rect x="-19" y="-1465" width="94" height="103" fill="green">
+		<title>.id(cervical_region)</title>
+	</rect>
+	<rect x="-19" y="-1362" width="94" height="235" fill="grey">
+		<title>.id(thoracic_region)</title>
+	</rect>
+	<rect x="-19" y="-1127" width="94" height="79" fill="blue">
+		<title>.id(lumbar_region)</title>
+	</rect>
 	<circle style="fill: rgb(216, 216, 216);" cx="8.607445200558836" cy="-1393.4024955338596" r="0.9054">
 		<title>.id(point_01)</title>
 	</circle>
