@@ -2,72 +2,72 @@
   "features": {
     "marker_189": {
       "colour": "orange",
-      "models": "UBERON:9995360",
+      "models": "UBERON:9937542",
       "name": "left level of aortic hiatus on the vagus nerve"
     },
     "marker_190": {
       "colour": "orange",
-      "models": "UBERON:9915233",
+      "models": "UBERON:9943384",
       "name": "left level of esophageal hiatus on the vagus nerve"
     },
     "marker_191": {
       "colour": "orange",
-      "models": "UBERON:9927574",
+      "models": "UBERON:9993951",
       "name": "left level of sternal angle on the vagus nerve"
     },
     "marker_192": {
       "colour": "orange",
-      "models": "UBERON:9999181",
+      "models": "UBERON:9980236",
       "name": "left level of jugular notch on the vagus nerve"
     },
     "marker_193": {
       "colour": "orange",
-      "models": "UBERON:9923786",
+      "models": "UBERON:9975122",
       "name": "left level of superior border of the clavicle on the vagus nerve"
     },
     "marker_194": {
       "colour": "orange",
-      "models": "UBERON:9901289",
+      "models": "UBERON:9950452",
       "name": "left level of laryngeal prominence on the vagus nerve"
     },
     "marker_195": {
       "colour": "orange",
-      "models": "UBERON:9939191",
+      "models": "UBERON:9960252",
       "name": "left level of greater horn of hyoid on the vagus nerve"
     },
     "marker_196": {
       "colour": "orange",
-      "models": "UBERON:9903877",
+      "models": "UBERON:9917061",
       "name": "left level of carotid bifurcation on the vagus nerve"
     },
     "marker_197": {
       "colour": "orange",
-      "models": "UBERON:9914836",
+      "models": "UBERON:9919591",
       "name": "left level of angle of the mandible on the vagus nerve"
     },
     "marker_198": {
       "colour": "orange",
-      "models": "UBERON:9999589",
+      "models": "UBERON:9990877",
       "name": "left level of C1 transverse process on the vagus nerve"
     },
     "marker_199": {
       "colour": "orange",
-      "models": "UBERON:9955850",
+      "models": "UBERON:9907847",
       "name": "left level of inferior border of jugular foramen on the vagus nerve"
     },
     "marker_200": {
       "colour": "orange",
-      "models": "UBERON:9957676",
+      "models": "UBERON:9959403",
       "name": "left level of superior border of jugular foramen on the vagus nerve"
     },
     "marker_201": {
       "colour": "orange",
-      "models": "UBERON:9957266",
+      "models": "UBERON:9972940",
       "name": "left level of 1 cm superior to start of esophageal plexus on the vagus nerve"
     },
     "marker_202": {
       "colour": "orange",
-      "models": "UBERON:9941551",
+      "models": "UBERON:9909078",
       "name": "left level of inferior border of cranium on the vagus nerve"
     }
   },
