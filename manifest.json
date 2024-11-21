@@ -1,10 +1,8 @@
 {
   "description": "description.json",
   "id": "vagus-nerve-flatmap",
-  "kind": "centreline",
   "models": "UBERON:0001759",
   "properties": "properties.json",
-  "sckan-version": "sckan-2024-03-26",
   "sources": [
     {
       "href": "vagus.svg",
