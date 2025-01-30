@@ -27,7 +27,6 @@ jobs:
             server=${{ vars.DEVEL_MAP_SERVER }}
             token=${{ secrets.DEVEL_SERVER_TOKEN }}
           fi
-          server=${{ vars.CURATION_MAP_SERVER }} 
           python -m remotemaker \
                  --server $server \
                  --token $token \
