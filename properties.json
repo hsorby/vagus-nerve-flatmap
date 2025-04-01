@@ -107,8 +107,9 @@
         },
         {
           "connects": [
-            "point_21",
-            "point_22"
+            "point_06",
+            "point_08",
+            "point_07"
           ],
           "id": "nerve_feature_06",
           "label": "communicating branch of auricular branch of right vagus nerve with right facial nerve",
