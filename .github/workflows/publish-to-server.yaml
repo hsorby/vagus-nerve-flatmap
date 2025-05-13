@@ -30,6 +30,7 @@ jobs:
           python -m remotemaker \
                  --server $server \
                  --token $token \
+                 --debug \
                  --source ${{ github.server_url }}/${{ github.repository }} \
                  --manifest manifest.json \
                  --commit $commit
