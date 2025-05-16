@@ -33,6 +33,7 @@ jobs:
 
           error=0
           for file in $CHANGED; do
+            echo "file: $file"
             allowed=false
             for pattern in "${ALLOWED_PATTERNS[@]}"; do
               echo "$file : $pattern"
@@ -42,6 +43,7 @@ jobs:
               fi
             done
 
+            echo "allowed: $allowed"
             if [ "$allowed" = false ]; then
               echo "❌ Disallowed file: $file"
               error=1
