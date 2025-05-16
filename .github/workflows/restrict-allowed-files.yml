@@ -1,0 +1,56 @@
+name: Restrict File Changes
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+    if: github.repository == 'AnatomicMaps/vagus-nerve-flatmap'
+
+    steps:
+      - name: Checkout PR code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Required to compare changes
+
+      - name: Get list of changed files
+        id: changed
+        run: |
+          echo "CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | tr '\n' ' ')" >> $GITHUB_ENV
+
+      - name: Check for disallowed changes
+        run: |
+          echo "Checking changed files:"
+          echo "$CHANGED"
+
+          # Define allowed globs here
+          ALLOWED_PATTERNS=("description.json", "manifest.json", "properties.json", "vagus.svg")
+
+          # Install and use `minimatch` pattern matcher
+          npm install -g minimatch
+
+          error=0
+          for file in $CHANGED; do
+            allowed=false
+            for pattern in "${ALLOWED_PATTERNS[@]}"; do
+              if npx minimatch "$file" "$pattern"; then
+                allowed=true
+                break
+              fi
+            done
+
+            if [ "$allowed" = false ]; then
+              echo "❌ Disallowed file: $file"
+              error=1
+            fi
+          done
+
+          if [ "$error" -eq 1 ]; then
+            echo "❌ Pull request includes disallowed files."
+            exit 1
+          else
+            echo "✅ Only allowed files were changed."
+          fi
+

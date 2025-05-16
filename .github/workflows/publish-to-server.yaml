@@ -9,6 +9,7 @@ on:
 jobs:
   generate-map:
     runs-on: ubuntu-latest
+    if: github.repository == 'AnatomicMaps/vagus-nerve-flatmap'
     steps:
       - name: Install Python
         uses: actions/setup-python@v5

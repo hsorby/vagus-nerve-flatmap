@@ -1,0 +1,60 @@
+# .github/workflows/auto-merge-allowed-prs.yml
+name: Auto-merge PRs with only allowed changes
+
+on:
+  pull_request:
+    types: [labeled, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    if: github.repository == 'AnatomicMaps/vagus-nerve-flatmap'
+
+    steps:
+      - name: Check for 'auto-merge' label and all checks passing
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo, number } = context.issue;
+
+            const pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
+
+            const hasAutoMergeLabel = pr.data.labels.some(label => label.name === "auto-merge");
+
+            if (!hasAutoMergeLabel) {
+              console.log("❌ 'auto-merge' label not present. Skipping merge.");
+              return;
+            }
+
+            if (pr.data.mergeable_state !== "clean") {
+              console.log("❌ PR is not in a clean, mergeable state:", pr.data.mergeable_state);
+              return;
+            }
+
+            const checks = await github.rest.checks.listForRef({
+              owner,
+              repo,
+              ref: pr.data.head.sha,
+            });
+
+            const allPassed = checks.data.check_runs.every(run => run.conclusion === "success");
+
+            if (!allPassed) {
+              console.log("❌ Not all required checks have passed.");
+              return;
+            }
+
+            await github.rest.pulls.merge({
+              owner,
+              repo,
+              pull_number: number,
+              merge_method: "merge", // or 'squash' or 'rebase'
+            });
+
+            console.log("✅ PR automatically merged.");
+
