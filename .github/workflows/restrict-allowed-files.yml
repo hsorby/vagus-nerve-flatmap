@@ -1,4 +1,4 @@
-name: Restrict File Changes
+name: restrict-file-changes
 
 on:
   pull_request:
@@ -33,7 +33,7 @@ jobs:
           const allowed = ["description.json", "manifest.json", "properties.json", "vagus.svg"];
 
           const disallowed = changed.filter(file =>
-            !allowed.some(pattern => minimatch(file, pattern))
+            !allowed.some(pattern => minimatch.minimatch(file, pattern))
           );
 
           if (disallowed.length > 0) {
