@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  check-files:
+  restrict:
     runs-on: ubuntu-latest
     if: github.repository == 'AnatomicMaps/vagus-nerve-flatmap'
 
@@ -13,49 +13,35 @@ jobs:
       - name: Checkout PR code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Required to compare changes
+          fetch-depth: 0  # required for diffing against base
 
-      - name: Get list of changed files
+      - name: Get changed files
         id: changed
         run: |
-          echo "CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | tr '\n' ' ')" >> $GITHUB_ENV
+          echo "files=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | tr '\n' ' ')" >> $GITHUB_OUTPUT
 
-      - name: Check for disallowed changes
+      - name: Install dependencies
+        run: npm install minimatch
+
+      - name: Restrict changed files to allowed paths
+        env:
+          CHANGED: ${{ steps.changed.outputs.files }}
         run: |
-          echo "Checking changed files:"
-          echo "$CHANGED"
+          node <<'EOF'
+          const minimatch = require('minimatch');
+          const changed = process.env.CHANGED.split(/\s+/);
+          const allowed = ["description.json", "manifest.json", "properties.json", "vagus.svg"];
 
-          # Define allowed globs here
-          ALLOWED_PATTERNS=("description.json", "manifest.json", "properties.json", "vagus.svg")
+          const disallowed = changed.filter(file =>
+            !allowed.some(pattern => minimatch(file, pattern))
+          );
 
-          # Install and use `minimatch` pattern matcher
-          npm install -g minimatch
+          if (disallowed.length > 0) {
+            console.error("❌ Disallowed files detected:");
+            disallowed.forEach(f => console.error(`  - ${f}`));
+            process.exit(1);
+          }
 
-          which npx
-          which minimatch
-          error=0
-          for file in $CHANGED; do
-            echo "file: $file"
-            allowed=false
-            for pattern in "${ALLOWED_PATTERNS[@]}"; do
-              echo "$file : $pattern"
-              if npx minimatch "$file" "$pattern"; then
-                allowed=true
-                break
-              fi
-            done
-
-            echo "allowed: $allowed"
-            if [ "$allowed" = false ]; then
-              echo "❌ Disallowed file: $file"
-              error=1
-            fi
-          done
-
-          if [ "$error" -eq 1 ]; then
-            echo "❌ Pull request includes disallowed files."
-            exit 1
-          else
-            echo "✅ Only allowed files were changed."
-          fi
+          console.log("✅ All changed files are within allowed paths.");
+          EOF
 
