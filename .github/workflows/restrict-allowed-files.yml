@@ -32,16 +32,15 @@ jobs:
           const changed = process.env.CHANGED.split(/\s+/);
           const allowed = ["description.json", "manifest.json", "properties.json", "vagus.svg"];
 
-          const disallowed = changed.filter(file =>
+          const disallowed = changed.filter(file => file.trim() !== "" &&
             !allowed.some(pattern => minimatch.minimatch(file, pattern))
           );
 
           if (disallowed.length > 0) {
-            console.error("❌ Disallowed files detected:");
-            disallowed.forEach(f => f ? console.error(`  - ${f}`) : '');
+            console.log("❌ Disallowed files:");
+            disallowed.forEach(f => console.log(`- ${f}`));
             process.exit(1);
           }
 
           console.log("✅ All changed files are within allowed paths.");
           EOF
-
