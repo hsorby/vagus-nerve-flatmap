@@ -3,7 +3,8 @@ name: Auto-merge PRs with only allowed changes
 
 on:
   pull_request:
-    types: [labeled, synchronize, reopened]
+    branches:
+      - release
 
 permissions:
   pull-requests: write

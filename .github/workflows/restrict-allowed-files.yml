@@ -2,7 +2,8 @@ name: restrict-file-changes
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    branches:
+      - release
 
 jobs:
   restrict:
