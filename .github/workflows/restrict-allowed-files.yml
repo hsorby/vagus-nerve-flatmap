@@ -31,6 +31,8 @@ jobs:
           # Install and use `minimatch` pattern matcher
           npm install -g minimatch
 
+          which npx
+          which minimatch
           error=0
           for file in $CHANGED; do
             echo "file: $file"
