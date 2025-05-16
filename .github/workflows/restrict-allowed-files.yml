@@ -38,7 +38,7 @@ jobs:
 
           if (disallowed.length > 0) {
             console.error("❌ Disallowed files detected:");
-            disallowed.forEach(f => console.error(`  - ${f}`));
+            disallowed.forEach(f => f ? console.error(`  - ${f}`) : '');
             process.exit(1);
           }
 
