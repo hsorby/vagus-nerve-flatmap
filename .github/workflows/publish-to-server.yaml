@@ -4,6 +4,8 @@ on:
     branches:
       - curation
       - devel
+      - staging
+      - release
   workflow_dispatch:
 
 jobs:
@@ -21,12 +23,18 @@ jobs:
       - name: run remotemaker
         run: |
           commit=${{ github.ref_name }}
-          if [[ "curation" == "${{ github.ref_name }}" ]]; then
+          if [[ "curation" == "${commit}" ]]; then
             server=${{ vars.CURATION_MAP_SERVER }}
             token=${{ secrets.CURATION_SERVER_TOKEN }}
-          elif [[ "devel" == "${{ github.ref_name }}" ]]; then
+          elif [[ "devel" == "${commit}" ]]; then
             server=${{ vars.DEVEL_MAP_SERVER }}
             token=${{ secrets.DEVEL_SERVER_TOKEN }}
+          elif [[ "staging" == "${commit}" ]]; then
+            server=${{ vars.STAGING_MAP_SERVER }}
+            token=${{ secrets.STAGING_SERVER_TOKEN }}
+          elif [[ "release" == "${commit}" ]]; then
+            server=${{ vars.PRODUCTION_MAP_SERVER }}
+            token=${{ secrets.PRODUCTION_SERVER_TOKEN }}
           fi
           python -m remotemaker \
                  --server $server \
